@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category_view.routine.routine"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_recycle_routine_view"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/search_recycle_routine_view"
+        android:layout_height="wrap_content"
+        android:id="@+id/llllll"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROUTINES"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:textSize="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/sort_routine"
+            android:id="@+id/fliter_routine"
+            android:textColor="#000000"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/sort_routine"
+            android:textSize="18dp"
+            android:textColor="#000000"></TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Routine"
+        android:layout_below="@id/llllll"
+        android:id="@+id/add_routine_video"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#000000"></TextView>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/add_routine_video"
+    android:id="@+id/swipe_routine"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_routine_view"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+
+        android:layout_height="match_parent" />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/routine_progressbar"
+        android:visibility="gone"
+        android:overScrollMode="always"
+        ></ProgressBar>
+
+</RelativeLayout>

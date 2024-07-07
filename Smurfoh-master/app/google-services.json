@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "593529809769",
+    "firebase_url": "https://smurfohouse-3858e.firebaseio.com",
+    "project_id": "smurfohouse-3858e",
+    "storage_bucket": "smurfohouse-3858e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593529809769:android:aa3551ddbf3422a84b6bf8",
+        "android_client_info": {
+          "package_name": "com.example.SmurfoUser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593529809769-3dj5vscb5hsrhdj5q13lc4smpp0dq9kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9fxah4pEXUYMgPQzDgNS4ervTD8TK_Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593529809769-3dj5vscb5hsrhdj5q13lc4smpp0dq9kn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

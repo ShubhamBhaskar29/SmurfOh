@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpNextScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:src="@drawable/people_image"
+        android:layout_marginTop="@dimen/dp100"
+        android:layout_marginStart="@dimen/dp130"
+        android:id="@+id/userImage_signup"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImage_signup"
+        android:id="@+id/user_name_signup"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="@string/user_name"
+        />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name_signup"
+            android:layout_margin="@dimen/margin10"
+            android:id="@+id/user_profession_signup"
+            android:padding="10dp"
+            android:hint="@string/profession"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_profession_signup"
+            android:layout_margin="@dimen/margin10"
+            android:id="@+id/user_phone_noo"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:hint="Phone No." />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_phone_noo"
+            android:layout_margin="@dimen/margin10"
+            android:id="@+id/user_statuss"
+            android:padding="10dp"
+            android:hint="Crew Name"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_statuss"
+            android:layout_margin="@dimen/margin10"
+            android:id="@+id/user_aboutt"
+            android:padding="10dp"
+            android:hint="About"
+            />
+
+
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_aboutt"
+        android:id="@+id/user_dancer_level"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your style"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/user_dancer_level"
+            android:id="@+id/style"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_button_grp1"
+        android:layout_below="@id/style"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:layout_weight="1"
+        android:id="@+id/r1"
+        android:background="@drawable/br1"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:layout_weight="1"
+        android:id="@+id/r2"
+        android:background="@drawable/cl1"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:layout_weight="1"
+        android:id="@+id/r3"
+        android:background="@drawable/hip1"
+        android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_button_grp2"
+        android:layout_below="@id/radio_button_grp1"
+        android:orientation="horizontal"
+        >
+    <RadioButton
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:id="@+id/r4"
+        android:background="@drawable/kr1"
+        android:layout_weight="1"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:id="@+id/r5"
+        android:background="@drawable/w1"
+        android:layout_weight="1"
+        android:onClick="onRadioButtonClicked"/>
+
+    <RadioButton
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_margin="@dimen/margin10"
+        android:padding="@dimen/margin10"
+        android:id="@+id/r6"
+        android:background="@drawable/bhr1"
+        android:layout_weight="1"
+        android:onClick="onRadioButtonClicked"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin20"
+        android:layout_marginRight="@dimen/margin20"
+        android:layout_height="wrap_content"
+        android:text="@string/app_submit"
+        android:id="@+id/signup_next_submit"
+        android:textColor="@color/black"
+        android:layout_below="@id/radio_button_grp2"/>
+    <ProgressBar
+        android:id="@+id/progressBar_signup_next"
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/margin20"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>
